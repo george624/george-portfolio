@@ -1,7 +1,16 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 
 const Hero = () => {
+  const scrollHandle = (e) => {
+    e.preventDefault();
+    let id = e.target.id;
+    let position = document.getElementById(id.slice(0, id.length - 1)); //removing extra last - (dash)
+    window.location.href = "#learnmore" + id.slice(0, id.length - 1); // changing the url
+    position && position.scrollIntoView({ behavior: "smooth", block: "start" }); //scrolling the page
+  };
+
   return (
     <div
       className="relative flex flex-col items-center justify-center w-full pt-20 pb-40 m-auto text-center heroElem z-1"
@@ -63,7 +72,7 @@ const Hero = () => {
       </h1>
 
       <Link href="/#learnmore" legacyBehavior>
-        <a>
+        <a onClick={scrollHandle}>
           <div className="px-10 py-4 text-xl font-bold transition-colors border-2 rounded-full cursor-pointer whitespace-nowrap text-fun-white border-fun-white bg-bg hover:bg-fun-pink hover:text-white hover:border-fun-pink">
             Tell me more
           </div>
