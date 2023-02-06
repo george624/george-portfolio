@@ -4,7 +4,7 @@ import { designs } from "../../data/designdata";
 const Designs = () => {
   return (
     <>
-      <div className="relative w-full py-16 text-center sm:py-20">
+      <div className="relative w-full py-16 overflow-scroll text-center sm:py-20 lg:overflow-hidden">
         <h1 className="relative inline-block w-auto mb-8 text-4xl sm:text-6xl">
           Designs
           <img
