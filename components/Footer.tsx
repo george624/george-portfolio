@@ -4,11 +4,11 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="mt-24 mb-6">
-      <div className="max-w-4xl w-full m-auto mt-8 pt-8 sm:mt-4 sm:pt-4 text-center text-fun-gray border-t border-fun-pink-dark">
+      <div className="w-full max-w-4xl pt-8 m-auto mt-8 text-center border-t sm:mt-4 sm:pt-4 text-fun-gray border-fun-pink-dark">
         <div className="flex flex-col items-center justify-center ">
-          <div className="inline-flex items-center uppercase text-xs font-bold tracking-widest">
+          <div className="inline-flex items-center text-xs font-bold tracking-widest uppercase">
             Made with{" "}
-            <div className="space-x-2 inline-flex items-center -mt-1 ml-3">
+            <div className="inline-flex items-center ml-3 -mt-1 space-x-2">
               <span>
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
@@ -40,7 +40,7 @@ const Footer = () => {
             Made by{" "}
             <a
               href="mailto:georgesoriano74@gmail.com"
-              className="text-fun-gray-light font-medium"
+              className="font-medium text-fun-gray-light"
             >
               George Soriano
             </a>
@@ -50,8 +50,8 @@ const Footer = () => {
       </div>
       <div className="mt-8 text-center sm:text-right sm:-mt-12">
         <a
-          className="w-auto inline-flex items-center sm:w-auto font-bold flex-shrink text-xs border border-fun-pink px-4 py-2 rounded-xl text-fun-pink cursor-pointer opacity-50"
-          href="https://github.com/braydentw/braydentw.io"
+          className="inline-flex items-center flex-shrink w-auto px-4 py-2 text-xs font-bold border opacity-50 cursor-pointer sm:w-auto border-fun-pink rounded-xl text-fun-pink"
+          href="https://github.com/george624/george-portfolio"
           target="_blank"
           rel="nooreferrer"
         >
