@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 const Hero = () => {
-  const scrollHandle = (e: React.MouseEvent<HTMLElement>) => {
+  const scrollHandle = (e: any) => {
     e.preventDefault();
     let id = e.target.id;
     let position = document.getElementById(id.slice(0, id.length - 1)); //removing extra last - (dash)
