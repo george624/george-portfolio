@@ -78,7 +78,7 @@ export default function MobileNav() {
   );
 }
 
-function MenuIcon(props) {
+function MenuIcon(props: any) {
   return (
     <svg
       className="absolute w-5 h-5 text-gray-100"
@@ -106,7 +106,7 @@ function MenuIcon(props) {
   );
 }
 
-function CrossIcon(props) {
+function CrossIcon(props: any) {
   return (
     <svg
       className="absolute w-5 h-5 text-gray-100"
