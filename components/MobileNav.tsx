@@ -1,18 +1,10 @@
 import { useEffect, useState } from "react";
 
 import Link from "next/link";
-import useDelayedRender from "use-delayed-render";
 import { routes } from "../data/global";
 
 export default function MobileNav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { mounted: isMenuMounted, rendered: isMenuRendered } = useDelayedRender(
-    isMenuOpen,
-    {
-      enterDelay: 20,
-      exitDelay: 300,
-    }
-  );
 
   function toggleMenu() {
     if (isMenuOpen) {
@@ -33,9 +25,7 @@ export default function MobileNav() {
   return (
     <nav>
       <div
-        className={`w-full justify-between flex items-center ${
-          isMenuRendered && "bg-bg"
-        } p-5`}
+        className={`w-full justify-between flex items-center bg-bg p-5`}
         style={{ zIndex: 101 }}
       >
         <li className="text-lg font-bold list-none">
@@ -58,10 +48,10 @@ export default function MobileNav() {
           <CrossIcon data-hide={!isMenuOpen} />
         </button>
       </div>
-      {isMenuMounted && (
+      {isMenuOpen && (
         <ul
           className={`menu flex flex-col absolute bg-bg
-            ${isMenuRendered && "menuRendered"}`}
+           menuRendered`}
         >
           {routes.map((item, index) => {
             return (
