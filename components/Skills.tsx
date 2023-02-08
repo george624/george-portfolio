@@ -59,8 +59,8 @@ const Skills = () => {
     },
   ];
   return (
-    <div className="flex flex-col md:flex-row justify-between relative">
-      <h2 className="relative text-3xl w-full text-center md:text-left font-bold md:max-w-lg mb-10 md:mr-10 md:mb-0 md:w-max mr-0 ">
+    <div className="relative flex flex-col justify-between md:flex-row">
+      <h2 className="relative w-full mb-10 mr-0 text-3xl font-bold text-center md:text-left md:max-w-lg md:mr-10 md:mb-0 md:w-max ">
         I got the experience.
         <br />
         Here is my tech stuff for success.
@@ -81,16 +81,16 @@ const Skills = () => {
           src="/static/doodles/skills/fillStar.svg"
         />
       </h2>
-      <div className="relative max-w-lg w-full mx-auto md:mx-none grid gap-x-8 gap-y-12 sm:gap-8 md:gap-12 grid-cols-3 sm:grid-cols-6 items-center place-content-center">
+      <div className="relative grid items-center w-full max-w-lg grid-cols-3 mx-auto md:mx-none gap-x-8 gap-y-12 sm:gap-8 md:gap-12 sm:grid-cols-6 place-content-center">
         {skills.map((item, index) => {
           return (
             <div
               title={item.title}
               key={index}
-              className="w-10 mx-auto flex items-center flex-col justify-center"
+              className="flex flex-col items-center justify-center w-10 mx-auto"
             >
               <img src={item.icon} style={item.style} />
-              <p className="text-xs text-fun-gray font-bold mt-3 opacity-80">
+              <p className="mt-3 text-xs font-bold text-fun-gray opacity-80">
                 {item.title}
               </p>
             </div>

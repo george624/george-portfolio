@@ -15,8 +15,8 @@ const Project = () => {
         </h1>
         <p className="max-w-3xl m-auto text-xl text-fun-gray sm:text-2xl">
           I've built cool apps and websites using anything from HTML to React
-          (and even PHP!). Here are some of my favorite projects over the course
-          of my journey.
+          (and even NodeJS!). Here are some of my favorite projects over the
+          course of my journey.
         </p>
       </div>
 

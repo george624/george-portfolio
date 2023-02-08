@@ -1,14 +1,23 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import { projects } from "../data/projectdata";
 import ProjectCard from "./molecules/ProjectCard";
 import SectionTitle from "./SectionTitle";
 
+import { motion } from "framer-motion";
+
 const Projects = () => {
   return (
     <div className="relative flex flex-col justify-between pt-8 text-left">
       <div id="learnmore">
-        <SectionTitle title="Here are a few of my favorite projects." />
+        <motion.div
+          initial={{ x: -1000 }}
+          animate={{ x: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <SectionTitle title="Here are a few of my favorite projects." />
+        </motion.div>
       </div>
       <div className="grid items-start grid-cols-1 gap-12 md:gap-5 md:grid-cols-3">
         {projects.slice(0, 3).map((item) => {
