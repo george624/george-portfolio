@@ -2,7 +2,11 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-function ProjectCard({ project }) {
+interface ProjectProps {
+  project: any;
+}
+
+const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
   const kebabCase = (str: string) =>
     str
       .replace(/([a-z])([A-Z])/g, "$1-$2")
@@ -65,6 +69,6 @@ function ProjectCard({ project }) {
       </div>
     </div>
   );
-}
+};
 
 export default ProjectCard;
