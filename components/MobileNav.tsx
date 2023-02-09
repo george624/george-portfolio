@@ -9,18 +9,10 @@ export default function MobileNav() {
   function toggleMenu() {
     if (isMenuOpen) {
       setIsMenuOpen(false);
-      document.body.style.overflow = "";
     } else {
       setIsMenuOpen(true);
-      document.body.style.overflow = "hidden";
     }
   }
-
-  useEffect(() => {
-    return function cleanup() {
-      document.body.style.overflow = "";
-    };
-  }, []);
 
   return (
     <nav>
@@ -56,6 +48,7 @@ export default function MobileNav() {
           {routes.map((item, index) => {
             return (
               <li
+                key={index}
                 className="text-sm font-semibold text-gray-100 border-b border-gray-900"
                 style={{ transitionDelay: `${150 + index * 25}ms` }}
               >

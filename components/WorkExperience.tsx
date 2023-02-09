@@ -6,7 +6,7 @@ const WorkExperience = () => {
   return (
     <div className="flex flex-col w-full max-w-md m-auto text-left md:max-w-full">
       <SectionTitle title="Here's my work experience timeline!" />
-      <div className="items-start max-w-5xl m-auto">
+      <div className="items-start max-w-5xl px-4 m-auto lg:px-0">
         <div className="flex-row space-x-4 lg:flex">
           <ol className="relative w-full border-l border-gray-200 dark:border-gray-700 lg:w-1/2">
             <li className="mb-10 ml-6">

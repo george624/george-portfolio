@@ -61,7 +61,7 @@ const Hero = () => {
           src="/static/doodles/hero/paintbrush.svg"
         />
         <img
-          className="sqD squiggle-hero-pop1  top-[-130px] left-[-5%] lg:top-[-130px] lg:left-[120px]"
+          className="sqD squiggle-hero-pop1 top-[-120px] left-[-5%] lg:top-[-130px] lg:left-[120px]"
           src="/static/doodles/hero/pop1.svg"
         />
         <img

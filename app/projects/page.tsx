@@ -5,7 +5,7 @@ import { projects } from "../../data/projectdata";
 const Project = () => {
   return (
     <div>
-      <div className="w-full py-12 overflow-scroll text-center lg:overflow-hidden sm:py-20">
+      <div className="w-full py-12 text-center sm:py-20">
         <h1 className="relative inline-block w-auto mx-auto mb-8 text-4xl sm:text-6xl">
           Projects
           <img
