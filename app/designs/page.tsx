@@ -20,12 +20,12 @@ const Designs = () => {
         {designs.map((item, index) => {
           return (
             <div className="w-full" key={index}>
-              <a href={item.link} target="_blank" className="w-full">
+              <div className="w-full">
                 <img
                   className="object-cover w-full transition-opacity h-96 hover:opacity-75"
                   src={item.img}
                 />
-              </a>
+              </div>
             </div>
           );
         })}
