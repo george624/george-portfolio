@@ -26,7 +26,8 @@ const Skills = () => {
     },
     {
       title: "TailwindCSS",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+      icon: "https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg",
+      style: {},
     },
     {
       title: "React",
@@ -89,7 +90,7 @@ const Skills = () => {
               key={index}
               className="flex flex-col items-center justify-center w-10 mx-auto"
             >
-              <img src={item.icon} style={item.style} />
+              <img className="" src={item.icon} style={item.style} />
               <p className="mt-3 text-xs font-bold text-fun-gray opacity-80">
                 {item.title}
               </p>
